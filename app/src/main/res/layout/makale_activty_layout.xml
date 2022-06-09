@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding="utf-8" ?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:collapseIcon="@drawable/ic_baseline_arrow_back_24"
+        app:titleTextColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMakale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Makale Ara"
+        android:digits="0123456789 qwertyuıopğüasdfghjklşizxcvbnmöçABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arama"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_sayi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#BCCD2122"
+            android:onClick="onRadioButtonClicked"
+            android:text="Sayı" />
+
+        <RadioButton
+            android:id="@+id/radio_yil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:buttonTint="#BCCD2122"
+            android:onClick="onRadioButtonClicked"
+            android:text="Yıl" />
+        <RadioButton
+            android:id="@+id/radio_yazar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:buttonTint="#BCCD2122"
+            android:onClick="onRadioButtonClicked"
+            android:text="Yazar" />
+        <RadioButton
+            android:id="@+id/radio_makale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:buttonTint="#BCCD2122"
+            android:onClick="onRadioButtonClicked"
+            android:text="Makale" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

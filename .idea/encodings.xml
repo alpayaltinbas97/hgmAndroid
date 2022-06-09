@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1254">
+    <file url="file://$PROJECT_DIR$/app/build.gradle" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hgm/haritagenelmudurlugu/Pages/BilimActivity.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hgm/haritagenelmudurlugu/Pages/MakaleActivity.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hgm/haritagenelmudurlugu/Pages/PdfViewActivity.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hgm/haritagenelmudurlugu/Pages/YonetimActivity.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hgm/haritagenelmudurlugu/SiteActivities/KurulActivities/bilimActivity.java" charset="windows-1254" />
+    <file url="PROJECT" charset="windows-1254" />
+  </component>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.YonetimActivity"
+    android:stretchColumns="1,2,3"
+    android:layout_margin="@dimen/_8sdp">
+    <TableRow
+        android:background="@color/purple_200"
+        >
+
+        <TextView
+            android:text="Görev"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"
+            />
+        <TextView
+            android:text="Rütbe"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"
+            />
+        <TextView
+            android:text="Ad ve Soyad"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_column="1"
+            />
+    </TableRow>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yonetimRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</TableLayout>

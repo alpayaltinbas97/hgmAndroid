@@ -1,0 +1,4 @@
+yapılacak değişiklikler
+
++local ip adress sunucu tarafına geçirilecek
+

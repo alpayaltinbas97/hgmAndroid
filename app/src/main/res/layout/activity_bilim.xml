@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1,2,3,4"
+    android:layout_margin="@dimen/_4sdp"
+    tools:context=".Pages.BilimActivity">
+
+    <TableRow android:background="@color/purple_200">
+        <TextView
+            android:layout_column="1"
+            android:gravity="left"
+            android:text="Unvan"
+            android:layout_width="30dp"
+            android:padding="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_column="1"
+            android:gravity="left"
+            android:text="Adı Soyadı"
+            android:layout_width="80dp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_column="1"
+            android:gravity="left"
+            android:text="Kurumu"
+            android:layout_width="70dp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_column="1"
+            android:gravity="left"
+            android:text="Branşı"
+            android:layout_width="60dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+    </TableRow>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</TableLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CallFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/call_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iletisim"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/altbaslik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/call_title"
+                android:text="Harita Genel Müdürlüğü"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/altbaslik2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altbaslik"
+                android:text="Harita Dergisi Yönetim Kurulu Başkanlığı "
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altbaslik2"
+                android:text="06590 Cebeci/ANKARA"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/telefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adres"
+                android:text="Tel: (0312) 595 21 21 - 21 20"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/faks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/telefon"
+                android:text="Fax: (0312) 320 14 95"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faks"
+                android:text="haritadergisi@harita.gov.tr"
+                android:textIsSelectable="true" />
+
+
+            <TextView
+                android:id="@+id/haritasatis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="15dp"
+                android:text="Harita Satış Bürosu"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/haritasatis"
+                android:text="0 312 595 20 72"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/tel6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tel5"
+                android:text="0 312 595 23 28"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/haritacilikmüzesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel6"
+                android:layout_marginTop="15dp"
+                android:text="Haritacılık Müzesi"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tel7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/haritacilikmüzesi"
+                android:text="0 312 595 23 38"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/sosyalmedya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel7"
+                android:layout_marginTop="15dp"
+                android:text="Sosyal Medya"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sosyalmedya"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btntwitter"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/tel7"
+                    android:src="@drawable/twe"/>
+
+                <ImageView
+                    android:id="@+id/btninstagram"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/btntwitter"
+                    android:src="@drawable/ins" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
